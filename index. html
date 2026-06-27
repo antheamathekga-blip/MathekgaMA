@@ -6,67 +6,45 @@
     <title>Matlou Anthea Mathekga | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">MATLOU</div>
+        <h2 class="logo">My Portfolio</h2>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#weather">Weather</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" id="home">
 
         <div class="hero-content">
 
             <div class="hero-text">
-
                 <h1>Matlou Anthea Mathekga</h1>
 
                 <h2>IT & Computer Sciences Graduate</h2>
 
                 <p>
-                    Passionate about developing responsive and interactive websites using HTML, CSS and JavaScript.
+                    Welcome to my portfolio website. I am passionate about
+                    web development and creating responsive websites using
+                    HTML, CSS and JavaScript.
                 </p>
 
-                <a href="#contact" class="btn">Contact Me</a>
-
+                <a href="#about" class="btn">Learn More</a>
             </div>
 
             <div class="hero-image">
                 <img src="profile.jpg" alt="Profile Picture">
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- Weather Section -->
-    <section class="weather">
-
-        <h2>Live Weather</h2>
-
-        <div class="weather-card">
-
-            <p id="location">📍 Detecting your location...</p>
-
-            <p id="temperature"></p>
-
-            <p id="condition"></p>
-
-            <p id="wind"></p>
 
         </div>
 
@@ -78,43 +56,11 @@
         <h2>About Me</h2>
 
         <p>
-            Hello! My name is <strong>Matlou Anthea Mathekga</strong>. I am an IT and Computer Sciences Graduate currently studying JavaScript at Initium Venture Solutions.
+            Hello, my name is Matlou Anthea Mathekga.
+            I am an IT and Computer Sciences graduate currently studying
+            JavaScript at Initium Venture Solutions.
+            I enjoy designing modern websites and learning new technologies.
         </p>
-
-        <p>
-            I enjoy building responsive websites, solving problems and learning new technologies. My goal is to become a skilled Full Stack Web Developer capable of creating modern web applications.
-        </p>
-
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-
-        <h2>Education</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>NCV Level 2</h3>
-                <p>Information Technology & Computer Science</p>
-            </div>
-
-            <div class="card">
-                <h3>NCV Level 3</h3>
-                <p>Information Technology & Computer Science</p>
-            </div>
-
-            <div class="card">
-                <h3>NCV Level 4</h3>
-                <p>Information Technology & Computer Science</p>
-            </div>
-
-            <div class="card">
-                <h3>JavaScript Training</h3>
-                <p>Initium Venture Solutions</p>
-            </div>
-
-        </div>
 
     </section>
 
@@ -125,12 +71,25 @@
 
         <div class="cards">
 
-            <div class="card">HTML5</div>
-            <div class="card">CSS3</div>
-            <div class="card">JavaScript</div>
-            <div class="card">Responsive Web Design</div>
-            <div class="card">Git & GitHub</div>
-            <div class="card">Visual Studio Code</div>
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Responsive web page development.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Modern layouts and responsive design.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>DOM manipulation, APIs and interactive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Version control and collaboration.</p>
+            </div>
 
         </div>
 
@@ -145,18 +104,32 @@
 
             <div class="card">
                 <h3>Portfolio Website</h3>
-                <p>Responsive portfolio developed using HTML, CSS and JavaScript.</p>
+                <p>A responsive portfolio website built using HTML, CSS and JavaScript.</p>
             </div>
 
             <div class="card">
-                <h3>Weather Application</h3>
-                <p>Displays the user's location and current weather using APIs.</p>
+                <h3>Weather App</h3>
+                <p>Uses your location and displays the current weather.</p>
             </div>
 
-            <div class="card">
-                <h3>Donation Management System</h3>
-                <p>A desktop application developed using VB.NET.</p>
-            </div>
+        </div>
+
+    </section>
+
+    <!-- Weather -->
+    <section class="weather" id="weather">
+
+        <h2>Current Weather</h2>
+
+        <div class="weather-card">
+
+            <p id="location">Loading location...</p>
+
+            <p id="temperature"></p>
+
+            <p id="condition"></p>
+
+            <p id="wind"></p>
 
         </div>
 
@@ -173,7 +146,7 @@
 
             <input type="email" placeholder="Your Email" required>
 
-            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <textarea rows="5" placeholder="Your Message"></textarea>
 
             <button type="submit">Send Message</button>
 
@@ -181,12 +154,9 @@
 
     </section>
 
-    <!-- Footer -->
     <footer>
 
-        <p>© 2026 Matlou Anthea Mathekga</p>
-
-        <p>Built with HTML, CSS & JavaScript</p>
+        <p>&copy; 2026 Matlou Anthea Mathekga. All Rights Reserved.</p>
 
     </footer>
 
