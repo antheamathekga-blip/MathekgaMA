@@ -3,178 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matlou Anthea Mathekga | Portfolio</title>
-
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2 class="logo">My Portfolio</h2>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#weather">Weather</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <div class="hero-text">
-                <h1>Matlou Anthea Mathekga</h1>
-
-                <h2>IT & Computer Sciences Graduate</h2>
-
-                <p>
-                    Welcome to my portfolio website. I am passionate about
-                    web development and creating responsive websites using
-                    HTML, CSS and JavaScript.
-                </p>
-
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-
-            <div class="hero-image">
-                <img src="profile.jpg" alt="Profile Picture">
-            </div>
-
+    <!-- Responsive Navigation Header -->
+    <header class="portfolio-header">
+        <div class="header-container">
+            <h1 class="logo-title">My Portfolio</h1>
+            <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
+            <nav class="navigation-menu" id="navMenu">
+                <a href="#" class="menu-link active-link" data-section="home">Home</a>
+                <a href="#" class="menu-link" data-section="about">About</a>
+                <a href="#" class="menu-link" data-section="skills">Skills</a>
+                <a href="#" class="menu-link" data-section="projects">Projects</a>
+                <a href="#" class="menu-link" data-section="weather">Weather</a>
+                <a href="#" class="menu-link" data-section="contact">Contact</a>
+            </nav>
         </div>
+    </header>
 
-    </section>
-
-    <!-- About -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            Hello, my name is Matlou Anthea Mathekga.
-            I am an IT and Computer Sciences graduate currently studying
-            JavaScript at Initium Venture Solutions.
-            I enjoy designing modern websites and learning new technologies.
-        </p>
-
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>HTML</h3>
-                <p>Responsive web page development.</p>
+    <!-- Main Content Dynamic Viewports -->
+    <main class="content-wrapper">
+        
+        <!-- Home Section -->
+        <section id="home" class="portfolio-section section-active">
+            <div class="hero-content">
+                <h2>Welcome to My Space</h2>
+                <p>Hi, I am a developer building clean web solutions.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>CSS</h3>
-                <p>Modern layouts and responsive design.</p>
+        <!-- About Section -->
+        <section id="about" class="portfolio-section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <p>Write details about your journey, passion, and education background here.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>DOM manipulation, APIs and interactive websites.</p>
+        <!-- Skills Section -->
+        <section id="skills" class="portfolio-section">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Web Design</li>
+                <li>Git & GitHub Deployment</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="portfolio-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Weather App Portal</h3>
+                    <p>An API-driven module fetching real-time ambient information.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Git & GitHub</h3>
-                <p>Version control and collaboration.</p>
+        <!-- Weather Section -->
+        <section id="weather" class="portfolio-section">
+            <h2 class="weather-title">Current Weather</h2>
+            <div class="weather-widget-card">
+                <p id="weatherStatus">Loading location...</p>
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Portfolio Website</h3>
-                <p>A responsive portfolio website built using HTML, CSS and JavaScript.</p>
+        <!-- Contact Section -->
+        <section id="contact" class="portfolio-section">
+            <h2>Contact Me</h2>
+            <div class="contact-form-wrapper">
+                <form id="portfolioContactForm">
+                    <div class="form-group">
+                        <label for="clientName">Your Name</label>
+                        <input type="text" id="clientName" placeholder="Enter your name" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Weather App</h3>
-                <p>Uses your location and displays the current weather.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Weather -->
-    <section class="weather" id="weather">
-
-        <h2>Current Weather</h2>
-
-        <div class="weather-card">
-
-            <p id="location">Loading location...</p>
-
-            <p id="temperature"></p>
-
-            <p id="condition"></p>
-
-            <p id="wind"></p>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <form name="contact" method="POST" data-netlify="true">
-
-            <input type="hidden" name="form-name" value="contact">
-
-            <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required>
-
-            <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required>
-
-            <textarea
-                name="message"
-                rows="5"
-                placeholder="Your Message"
-                required></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-    </section>
-
-    <footer>
-
-        <p>&copy; 2026 Matlou Anthea Mathekga. All Rights Reserved.</p>
-
-    </footer>
+    </main>
 
     <script src="app.js"></script>
-
 </body>
 </html>
